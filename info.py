@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23631217'))
 API_HASH = environ.get('API_HASH', '567c6df308dc6901790309499f729d12')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7647447389:AAFIEBDxOzmv3yc6b2vF-7fJqR4oYtdtX5w")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -96,8 +96,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://myvjmobiesearch-83769fa3c0a4.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://myvjmobiesearch-83769fa3c0a4.herokuapp.com/".format(FQDN, PORT)
+URL = "https://uncertain-elizabet-muzaffar-c1f706a5.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://uncertain-elizabet-muzaffar-c1f706a5.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -112,9 +112,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://myvjmobiesearch-83769fa3c0a4.herokuapp.com/".format(FQDN)
+    URL = "https://uncertain-elizabet-muzaffar-c1f706a5.koyeb.app/".format(FQDN)
 else:
-    URL = "https://myvjmobiesearch-83769fa3c0a4.herokuapp.com/".format(FQDN)
+    URL = "https://uncertain-elizabet-muzaffar-c1f706a5.koyeb.app/".format(FQDN)
 
 
 
